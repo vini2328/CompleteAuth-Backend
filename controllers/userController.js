@@ -121,7 +121,7 @@ class UserController {
                     const secret = user._id +process.env.JWT_SECRET_KEY
     
                     const token =JWT.sign({userID :user._id},secret,{expiresIn:"15m"})
-                    const link = `https://64874edcfb6f3e0092fc06fe--lambent-swan-62c8e7.netlify.app/confirmpassword/${user._id}/${token}`
+                    const link = `https://648753c58f930000823fe819--symphonious-cheesecake-d7e5e6.netlify.app/confirmpassword/${user._id}/${token}`
                     console.log(link)
     
                     // send email
